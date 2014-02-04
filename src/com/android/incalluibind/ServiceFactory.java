@@ -27,6 +27,6 @@ import com.android.incallui.service.PhoneNumberService;
 public class ServiceFactory {
 
     public static PhoneNumberService newPhoneNumberService(Context context) {
-        return new PhoneNumberServiceImpl(context);
+        return (PhoneNumberService) new PhoneNumberServiceImpl(context);
     }
 }
